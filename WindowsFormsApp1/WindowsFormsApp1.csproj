@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeGenerator.cs" />
+    <Compile Include="DataParser.cs" />
+    <Compile Include="LionDataField.cs" />
+    <Compile Include="LionResource.cs" />
     <Compile Include="startPage.cs">
       <SubType>Form</SubType>
     </Compile>
