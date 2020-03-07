@@ -21,8 +21,8 @@ public class LionDataField
         this.Name = name;
         this.DataType = dataType;
         if (this.DataType == DataType.ENUM) {
-            // the trim function removes all whitespace, the ToUpper makes it uppercase, and the split function seperates all the values by commas
-            EnumValues = new List<string>(enumString.Trim().ToUpper().Split(','));
+            // the re[;ace function removes all whitespace and the split function seperates all the values by commas
+            EnumValues = new List<string>(enumString.Replace(" ", String.Empty).Split(','));
         }
 
     }
